@@ -1,12 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Académie 360</title> 
 </head>
-<body>
-    <h1>Hello World!</h1> 
-    <h2>Salut tout le monde!</h2>
+<body> 
+
+<header class="navbar">
+    <div class="container">
+        <h1 class="logo">Académie de Football</h1>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos de nous</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<header class="hero">
+    <img src="240_F_725208089_Jp5rABPN3UnzDF1pMT9ePirVB3mRbGKf.jpg" alt="Académie de Football" class="academie-img">
+    <div class="container">
+        <h1 class="hero-title">Bienvenue à l'Académie de Football</h1>
+        <p class="hero-subtitle">Développez les compétences de votre enfant avec nos séances d'entraînement de qualité.</p>
+        <a href="#contact" class="btn-primary">S'inscrire</a>
+    </div>
+</header>
+
+<main>
+    <section class="sessions">
+        <div class="session">
+            <img src="motricite.jpg" alt="Motricité et Coordination" class="session-img">
+            <h2 class="session-title">Motricité et Coordination</h2>
+            <p class="session-description">La motricité et la coordination sont des compétences essentielles pour le football. Elles permettent aux joueurs de réaliser des mouvements précis dans l’espace et d’adapter leur comportement en fonction des exigences de l’environnement1. Le travail sur la motricité et la coordination comprend l’orientation, le rythme, la différenciation, la réaction et l’équilibre. Des exercices tels que le dribble à travers des cônes et la course en slalom peuvent aider à améliorer le contrôle de la balle en mouvement.</p>
+            <a href="#contact" class="btn-secondary">Ajouter</a>
+        </div>
+        <div class="session">
+            <img src="motricité et coordination.jpg" alt="BASE&SKILLS" class="session-img">
+            <h2 class="session-title">BASE&SKILLS</h2>
+            <p class="session-description">Acquisition des bases techniques et des compétences de base pour jouer au football.Les compétences de base en football comprennent la maîtrise du ballon c'est à dire le contrôle-passe, la conduite de balle,le changement de rythme, l'appel contre-appel le tir, le dribble, l’agilité et la coordination, la défense, la communication et l’aspect mental3. L’acquisition de ces compétences de base est essentielle pour jouer au football. Des exercices tels que passer à travers des barrières et autour de mannequins peuvent aider à affiner la précision des passes et la prise de décision.</p>
+            <a href="#contact" class="btn-secondary">Ajouter</a>
+        </div>
+        <div class="session">
+            <img src="funino.png" alt="FUNINO" class="session-img">
+            <h2 class="session-title">FUNINO</h2>
+            <p class="session-description">Introduction au football avec des jeux ludiques et des exercices amusants pour stimuler l'intérêt des enfantsFUNINO est un jeu à quatre buts créé par Horst Wein, la plus grande autorité mondiale sur le développement des jeunes joueurs de football. Tout dans le jeu de FUNINO est conçu pour enseigner aux jeunes joueurs l’“intelligence du jeu” dans un cadre optimal où le jeu est l’enseignant et les règles sont les instructions. Ce jeu permet plus de contact avec le ballon et donc plus de temps de jeu individuel, ce qui améliore la confiance et les compétences techniques.De plus, le mode de jeu soutient le développement de la compréhension stratégique et tactique car les joueurs sont constamment obligés de prendre des décisions.</p>
+            <a href="#contact" class="btn-secondary">Ajouter</a>
+        </div>
+    </section>
+
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2 class="section-title">Articles Utiles</h2>
+            <div class="article-list">
+                <?php
+                // Inclure ici le code PHP pour afficher les articles
+                ?><?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $parent_name = $_POST["parent_name"];
+    $child_name = $_POST["child_name"];
+    $child_age = $_POST["child_age"];
+    $child_class = $_POST["child_class"];
+
+    // Enregistrez ces données dans une base de données ou envoyez-les par e-mail au responsable de l'académie
+}
+?>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Notre Coach et Notre Académie</h2>
+            <div class="coach-info">
+                <img src="coach.jpg" alt="Photo du coach" class="coach-img">
+                <div class="coach-description">
+                    <h3 class="coach-name">Nom du Coach</h3>
+                    <p class="coach-bio">Description du coach. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae massa non libero ultrices condimentum.</p>
+                </div>
+            </div>
+            <div class="academy-info">
+                <h3 class="academy-name">Nom de l'Académie</h3>
+                <p class="academy-description">Académie de Football
+
+                  À propos de nous
+                  
+                  L’Académie de Football est une institution dédiée à l’éducation et à la formation des jeunes footballeurs. Notre objectif est de prendre en charge un enfant dès l’âge de 4 ans afin de l’accompagner dans son apprentissage du football. Nous sommes complémentaires, voire additionnels, aux clubs de football traditionnels.Nos séances d’entraînement
+
+                  Nos séances sont organisées en petits groupes de 6 enfants. Chaque séance comprend :
+                  
+                  30 minutes d’aide aux devoirs pour faciliter la vie des enfants et des parents au retour de la séance.
+                  15 minutes de Funino, une introduction ludique au football.
+                  30 minutes de travail sur la motricité et la coordination pour développer les compétences fondamentales nécessaires au football.
+                  30 minutes de BASE&SKILLS pour acquérir les bases techniques et les compétences de base pour jouer au football.
+                  Une session de Funino non encadré pour finir la séance sur une note amusante.</p>
+                <p class="academy-ambitions">Ambitions de l'académie. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="contact-title">Contactez-nous</h2>
+            <form action="submit.php" method="POST">
+                <div class="form-group">
+                    <label for="parent_name">Nom du parent :</label>
+                    <input type="text" id="parent_name" name="parent_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="child_name">Prénom de l'enfant :</label>
+                    <input type="text" id="child_name" name="child_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="child_age">Âge de l'enfant :</label>
+                    <input type="number" id="child_age" name="child_age" min="4" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="child_class">Classe de l'enfant :</label>
+                    <input type="text" id="child_class" name="child_class" required>
+                </div>
+                <button type="submit" class="btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; Academy 360. Tous droits réservés.</p> 
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
